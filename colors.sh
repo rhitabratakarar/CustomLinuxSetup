@@ -6,7 +6,7 @@
 # To Public License, Version 2, as published by Sam Hocevar. See
 # http://sam.zoy.org/wtfpl/COPYING for more details.
 printf "\nFor using one of the 256 colors on the foreground '(text color)', the control sequence is '<Esc>[38;5;ColorNumberm'\n\n"
-printf "For using one of the 256 colors on the background, the control sequence is '<Esc>[48;5;ColorNumberm'\n\n"
+printf "For using one of the 256 colors on the background '(highlighting color)', the control sequence is '<Esc>[48;5;ColorNumberm'\n\n"
 for fgbg in 38 48 ; do # Foreground / Background
     for color in {0..255} ; do # Colors
         # Display the color
