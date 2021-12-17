@@ -24,6 +24,7 @@ Change Shell:
 Change Window Manager (theming is done here according to gruvbox theme):
 1. Install i3wm for the respective distribution.
 2. Go to [this github repo](https://github.com/a-schaefers/i3-wm-gruvbox-theme/) to customize your i3wm according to gruvbox theme.
+3. To set a wallpaper, use the command `exec --no-startup-id feh --bg-fill <path-to-image-file>` and add it to the end of the config file.
 
 Change Wallpaper:
 1. Install `feh` for the respective distribution.
