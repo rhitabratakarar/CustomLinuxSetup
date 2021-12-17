@@ -23,7 +23,7 @@ Change Shell:
 
 Change Window Manager (theming is done here according to gruvbox theme):
 1. Install i3wm for the respective distribution.
-2. Refer to [this github rep](https://github.com/a-schaefers/i3-wm-gruvbox-theme/)
+2. Refer to [this github repo](https://github.com/a-schaefers/i3-wm-gruvbox-theme/)
 
 Change Wallpaper:
 1. Install `feh` for the respective distribution.
