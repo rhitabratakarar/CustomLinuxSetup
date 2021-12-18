@@ -1,14 +1,14 @@
 #### FOR UBUNTU TYPE SYSTEMS ####
 
 Change Terminal Font:
-1. Download `Noto Sans Mono` or `Ubuntu Mono` font from Google Fonts.
+1. Download `Noto Sans Mono` or `Ubuntu Mono` or `Hack` font.
 2. Unzip the zip file and move the extracted contents into ~/.fonts directory.
-3. To update the font cache, use the command `fc-cache -r`.
-4. Open up the respective terminal given in the operating system.
-5. Go to the preferences of the terminal and change the font to `Noto Mono` or `Noto Sans Mono` or `Ubuntu Mono`.
+3. To update the font cache, Open the terminal and type `fc-cache -r -v`.
+4. Restart the terminal.
+5. Go to the preferences of the terminal and change the font.
 
 Change Terminal Theme:
-1. Open up the respective terminal given in the operating system
+1. Open up the respective terminal given in the operating system.
 2. Download `Gruvbox` Theme for the respective terminal, if not available, can go with other options too.
 3. Setup the Downloaded theme by going to the preferences of the terminal.
 
