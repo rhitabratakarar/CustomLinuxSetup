@@ -30,3 +30,8 @@ Change Window Manager (theming is done here according to gruvbox theme):
 Change Wallpaper:
 1. Install `feh` for the respective distribution.
 2. Open the terminal and type `feh --bg-fill <path-to-image-file>` where path to image file is the location of the file.
+
+Change GTK theme and Icon theme:
+1. Checkout this [repo](https://github.com/TheGreatMcPain/gruvbox-material-gtk) for gtk theme.
+2. Checkout this [repo](https://github.com/numixproject/numix-icon-theme-circle) for icon theme.
+3. Install `lxappearance` and change to the respective themes.
