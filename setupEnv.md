@@ -36,3 +36,9 @@ Change GTK theme and Icon theme:
 1. Checkout this [repo](https://github.com/TheGreatMcPain/gruvbox-material-gtk) for gtk theme.
 2. Checkout this [repo](https://github.com/numixproject/numix-icon-theme-circle) for icon theme.
 3. Install `lxappearance` and change to the respective themes.
+
+Make Terminal Transparent:
+1. Install third Party compositor, like `compton` for example.
+2. Add `exec --no-startup-id compton` to the i3 config file.
+3. Open `~/.config/compton.conf` and add `opacity-rule=["85:class_g = 'xfce4-terminal'"]`. This rule is for adding opacity for xfce4-terminal.
+4. Open Terminal and select transparency value from the preferences.
