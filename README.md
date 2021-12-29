@@ -33,7 +33,7 @@ Change Wallpaper:
 2. Open the terminal and type `feh --bg-fill <path-to-image-file>` where path to image file is the location of the file.
 
 Change GTK theme and Icon theme:
-1. Checkout this [repo](https://github.com/TheGreatMcPain/gruvbox-material-gtk) for gtk theme and icons.
+1. Checkout this [repo](https://github.com/TheGreatMcPain/gruvbox-material-gtk) for Gruvbox gtk theme and icons.
 2. Install `lxappearance` and change to the respective themes.
 
 Make Terminal Transparent:
