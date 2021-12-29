@@ -1,5 +1,3 @@
-#### FOR UBUNTU TYPE SYSTEMS ####
-
 Change Terminal Font:
 1. Download `Source Code Pro` or `Ubuntu Mono` or `Hack` font.
 2. Unzip the zip file and move the extracted contents into ~/.fonts directory.
