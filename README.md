@@ -1,3 +1,5 @@
+# Use these Instructions to customize or can copy the prebuilt configurations present in this repo.
+
 Change Terminal Font:
 1. Download `Source Code Pro` or `Ubuntu Mono` or `Hack` font.
 2. Unzip the zip file and move the extracted contents into ~/.fonts directory.
