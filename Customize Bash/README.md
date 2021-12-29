@@ -1,3 +1,3 @@
 # How to apply?
 
-To apply, edit ~/.bashrc and replace the PS1 with any one of the mentioned lines from PS1_colors.txt
+To apply, edit ~/.bashrc and replace the PS1 present in your .bashrc with any one of the mentioned lines from _PS1_colors.txt_
