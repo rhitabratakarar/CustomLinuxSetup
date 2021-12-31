@@ -218,7 +218,7 @@ bar {
 
 # blue gruvbox
 # class                 border|backgr|text|indicator|child_border
-client.focused          $blue $blue $darkgray $purple $darkgray
+client.focused          $blue $blue $darkgray $yellow $yellow
 client.focused_inactive $darkgray $darkgray $yellow $purple $darkgray
 client.unfocused        $darkgray $darkgray $yellow $purple $darkgray
 client.urgent           $red $red $white $red $red
@@ -232,7 +232,7 @@ exec --no-startup-id feh --bg-fill /home/rintu/Pictures/Wallpapers/8.jpg
 exec --no-startup-id compton
 
 # no window border
-for_window [class=".*"] border pixel 0
+for_window [class=".*"] border pixel 2
 
 gaps inner 6
 gaps top 5

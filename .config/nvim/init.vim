@@ -29,7 +29,7 @@ set number
 set showmatch
 
 " display thick cursor line to find the cursor easily
-set cursorline
+" set cursorline
 
 " syntax on for files
 syntax on
