@@ -22,7 +22,7 @@ Change Shell:
 7. To list all the themes `omz theme list` command can be used. It will list all the existing themes that comes prebuilt with `oh-my-zsh`.
 
 Change Window Manager (theming is done here according to gruvbox theme):
-1. Install i3-wm or maybe i3-gaps for the respective distribution.
+1. Install [i3-wm](https://github.com/i3/i3) or maybe [i3-gaps](https://github.com/Airblader/i3) for the respective distribution.
 2. Go to [this github repo](https://github.com/a-schaefers/i3-wm-gruvbox-theme/) to customize your i3wm according to gruvbox theme.
 3. To set a wallpaper, use the command `exec --no-startup-id feh --bg-fill <path-to-image-file>` and add it to the end of the config file.
 4. Or, Go to [this github repo](https://github.com/nimishgo/i3wm-themes) to manually check all applicable themes.
