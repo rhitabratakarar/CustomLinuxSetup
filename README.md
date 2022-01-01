@@ -20,7 +20,7 @@ Change Shell and customize:
 5. Install `oh-my-zsh`.
 6. Change the theme to `fino` by using the command `omz theme set fino`.
 7. To list all the themes `omz theme list` command can be used. It will list all the existing themes that comes prebuilt with `oh-my-zsh`.
-8. If you want to use custom theme, I recommend [this](https://github.com/romkatv/powerlevel10k#oh-my-zsh).
+8. If you want to use custom theme, I recommend [powerlevel10k](https://github.com/romkatv/powerlevel10k).
 
 Change Window Manager (theming is done here according to gruvbox theme):
 1. Install [i3-wm](https://github.com/i3/i3) or maybe [i3-gaps](https://github.com/Airblader/i3) for the respective distribution.
