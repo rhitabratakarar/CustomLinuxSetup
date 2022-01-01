@@ -12,7 +12,7 @@ Change Terminal Theme:
 2. Download `Gruvbox` Theme for the respective terminal, if not available, can go with other options too.
 3. Setup the Downloaded theme by going to the preferences of the terminal.
 
-Change Shell:
+Change Shell and customize:
 1. Install `zsh`.
 2. Change the shell to `zsh` by using the command, `chsh -s $(which zsh)`.
 3. Restart the terminal.
@@ -20,6 +20,7 @@ Change Shell:
 5. Install `oh-my-zsh`.
 6. Change the theme to `fino` by using the command `omz theme set fino`.
 7. To list all the themes `omz theme list` command can be used. It will list all the existing themes that comes prebuilt with `oh-my-zsh`.
+8. If you want to use custom theme, I recommend [this](https://github.com/romkatv/powerlevel10k#oh-my-zsh).
 
 Change Window Manager (theming is done here according to gruvbox theme):
 1. Install [i3-wm](https://github.com/i3/i3) or maybe [i3-gaps](https://github.com/Airblader/i3) for the respective distribution.
