@@ -24,6 +24,7 @@ set smartcase
 
 " show line numbers
 set number
+set relativenumber
 
 " show bracket matches
 set showmatch
