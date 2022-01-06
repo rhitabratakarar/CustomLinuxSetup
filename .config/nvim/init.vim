@@ -90,7 +90,13 @@ tnoremap <Esc> <C-\><C-n>
 inoremap { {}<left>
 inoremap ( ()<left>
 inoremap [ []<left>
-inoremap < <><left>
+
+let fts = ['html', 'yml']
+if index(fts, &filetype) != -1
+  inoremap < <><left>
+  inoremap <!- <!----><left><left><left>
+endif
+
 inoremap ' ''<left>
 inoremap " ""<left>
 inoremap ` ``<left>
@@ -98,7 +104,6 @@ inoremap {<c-j> {<c-j>}<ESC>O
 inoremap {; {<c-j>};<ESC>O
 inoremap (<c-j> (<c-j>)<ESC>O
 inoremap [<c-j> [<c-j>]<ESC>O
-inoremap <!- <!----><left><left><left>
 inoremap /* /**/<left><left>
 
 " delete character forward while in insert mode
