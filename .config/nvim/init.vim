@@ -90,13 +90,8 @@ tnoremap <Esc> <C-\><C-n>
 inoremap { {}<left>
 inoremap ( ()<left>
 inoremap [ []<left>
-
-let fts = ['html', 'yml']
-if index(fts, &filetype) != -1
-  inoremap < <><left>
-  inoremap <!- <!----><left><left><left>
-endif
-
+inoremap < <><left>
+inoremap <!- <!----><left><left><left>
 inoremap ' ''<left>
 inoremap " ""<left>
 inoremap ` ``<left>
