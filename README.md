@@ -1,7 +1,7 @@
 # Use these Instructions to customize or can copy the prebuilt configurations present in this repo.
 
 Change Terminal Font:
-1. Download `Source Code Pro` or `Ubuntu Mono` or `Hack` font.
+1. Download `Cascadia Code` or `Source Code Pro` or `Hack` font.
 2. Unzip the zip file and move the extracted contents into ~/.fonts directory.
 3. To update the font cache, Open the terminal and type `fc-cache -r -v`.
 4. Restart the terminal.
