@@ -40,6 +40,9 @@ let g:coc_global_extensions = ['coc-json',
 " not compatible with older vi
 set nocompatible
 
+" hide the files instead of killing it
+set hidden
+
 " no swap file
 set noswapfile
 
