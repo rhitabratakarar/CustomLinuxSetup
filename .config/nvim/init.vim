@@ -24,6 +24,9 @@ call plug#begin()
   " Conqueror of Completion
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+  " Setup theme
+  Plug 'morhetz/gruvbox'
+
 " Initialize plugin system
 call plug#end()
 
@@ -155,3 +158,7 @@ set statusline+=\
 
 " toggle nerd tree
 nmap <F2> :NERDTreeToggle<CR>
+
+" setup theme
+let g:gruvbox_italic=1
+colorscheme gruvbox

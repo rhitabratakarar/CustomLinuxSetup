@@ -1,4 +1,16 @@
-# Use these Instructions to customize or can copy the prebuilt configurations present in this repo.
+# First Install vim-plug plugin manager.
+
+Install Vim-Plug:
+1. Refer to [this page](https://github.com/junegunn/vim-plug).
+2. Copy the code from [this link](https://github.com/junegunn/vim-plug#example) and paste it inside init.vim.
+3. Remove unnecessary Plugins from the pasted code. (Note: Plugins are those which have the line starting with 'Plug' word).
+4. Type :so % to reload the nvim instance and type ':PlugInstall' to install the plugins.
+
+# Use these Instructions to customize manually or can copy the prebuilt configurations present in this repo.
+
+Install Conqueror of Completion (COC):
+1. Refer to the Coc github manual page from [this link](https://github.com/neoclide/coc.nvim).
+2. To setup a python environment, you must install the extension, 'coc-pyright' (Note: Extensions and Plugins are not same).
 
 Change Terminal Font:
 1. Download `Cascadia Code` or `Source Code Pro` or `Hack` font.
@@ -49,13 +61,3 @@ Make Terminal Transparent:
 2. Add `exec --no-startup-id compton` to the i3 config file.
 3. Open `~/.config/compton.conf` and add `opacity-rule=["85:class_g = 'xfce4-terminal'"]`. This rule is for adding opacity for xfce4-terminal.
 4. Open Terminal and select transparency value from the preferences.
-
-Install Vim-Plug:
-1. Refer to [this page](https://github.com/junegunn/vim-plug).
-2. Copy the code from [this link](https://github.com/junegunn/vim-plug#example) and paste it inside init.vim.
-3. Remove unnecessary Plugins from the pasted code. (Note: Plugins are those which have the line starting with 'Plug' word).
-4. Type :so % to reload the nvim instance and type ':PlugInstall' to install the plugins.
-
-Install Conqueror of Completion (COC):
-1. Refer to the Coc github manual page from [this link](https://github.com/neoclide/coc.nvim).
-2. To setup a python environment, you must install the extension, 'coc-pyright' (Note: Extensions and Plugins are not same).
