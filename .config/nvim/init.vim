@@ -162,3 +162,5 @@ nmap <F2> :NERDTreeToggle<CR>
 " setup theme
 let g:gruvbox_italic=1
 colorscheme gruvbox
+highlight Normal ctermbg=NONE
+
