@@ -7,8 +7,41 @@ function! StatuslineGit()
   return strlen(l:branchname) > 0?'  '.l:branchname.' ':''
 endfunction
 
+call plug#begin()
+  " The default plugin directory will be as follows:
+  "   - Vim (Linux/macOS): '~/.vim/plugged'
+  "   - Vim (Windows): '~/vimfiles/plugged'
+  "   - Neovim (Linux/macOS/Windows): stdpath('data') . '/plugged'
+  " You can specify a custom plugin directory by passing it as the argument
+  "   - e.g. `call plug#begin('~/.vim/plugged')`
+  "   - Avoid using standard Vim directory names like 'plugin'
+
+  " Make sure you use single quotes
+
+  " NERDTree Plugin
+  Plug 'preservim/nerdtree'
+
+  " Conqueror of Completion
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" Initialize plugin system
+call plug#end()
+
+" coc will install the missing extensions after coc.nvim service started.
+let g:coc_global_extensions = ['coc-json',
+      \ 'coc-git',
+      \ 'coc-pairs',
+      \ 'coc-pyright',
+      \]
+
 " not compatible with older vi
 set nocompatible
+
+" no swap file
+set noswapfile
+
+" determines the number of context lines you would like to see above and below the cursor.
+set scrolloff=5
 
 " show command at the right bottom of the screen
 set showcmd
@@ -87,19 +120,19 @@ inoremap <Space> <Space><C-g>u
 tnoremap <Esc> <C-\><C-n>
 
 " autocomplete pairs
-inoremap { {}<left>
-inoremap ( ()<left>
-inoremap [ []<left>
-inoremap < <><left>
-inoremap <!- <!----><left><left><left>
-inoremap ' ''<left>
-inoremap " ""<left>
-inoremap ` ``<left>
-inoremap {<c-j> {<c-j>}<ESC>O
-inoremap {; {<c-j>};<ESC>O
-inoremap (<c-j> (<c-j>)<ESC>O
-inoremap [<c-j> [<c-j>]<ESC>O
-inoremap /* /**/<left><left>
+" inoremap { {}<left>
+" inoremap ( ()<left>
+" inoremap [ []<left>
+" inoremap < <><left>
+" inoremap <!- <!----><left><left><left>
+" inoremap ' ''<left>
+" inoremap " ""<left>
+" inoremap ` ``<left>
+" inoremap {<c-j> {<c-j>}<ESC>O
+" inoremap {; {<c-j>};<ESC>O
+" inoremap (<c-j> (<c-j>)<ESC>O
+" inoremap [<c-j> [<c-j>]<ESC>O
+" inoremap /* /**/<left><left>
 
 " delete character forward while in insert mode
 inoremap <C-l> <Del>
@@ -119,3 +152,6 @@ set statusline+=\[%{&fileformat}\]
 set statusline+=\ %p%%
 set statusline+=\ %l:%c
 set statusline+=\
+
+" toggle nerd tree
+nmap <F2> :NERDTreeToggle<CR>
