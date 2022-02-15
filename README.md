@@ -4,7 +4,7 @@ Install Vim-Plug:
 1. Refer to [this page](https://github.com/junegunn/vim-plug).
 2. Copy the code from [this link](https://github.com/junegunn/vim-plug#example) and paste it inside init.vim.
 3. Remove unnecessary Plugins from the pasted code. (Note: Plugins are those which have the line starting with 'Plug' word).
-4. Type :so % to reload the nvim instance and type ':PlugInstall' to install the plugins.
+4. Save and restart the nvim instance. Type ':PlugInstall' to install the plugins.
 
 # Use these Instructions to customize manually or can copy the prebuilt configurations present in this repo.
 
@@ -12,7 +12,7 @@ Install Vim-Plug:
 
 Install Conqueror of Completion (COC):
 1. Refer to the Coc github page from [this link](https://github.com/neoclide/coc.nvim).
-2. To setup a python environment, you must install the extension, 'coc-pyright' (Note: Extensions and Plugins are not same).
+2. To setup a python environment, you must install the extension, 'coc-pyright' (Note: Coc extensions and vim-plug plugins are not same).
 
 Install Vim Airline:
 1. Goto [this](https://github.com/vim-airline/vim-airline) page to customize it. 
@@ -26,9 +26,14 @@ Install NERDTree:
 1. Goto [this](https://github.com/preservim/nerdtree) page to read the manual and manually customize it.
 2. TL;DR, Add `Plug 'preservim/nerdtree'` in your init.vim file (under plug#begin() and plug#end()).
 
+Install Colorizer:
+1. Goto [this link](https://github.com/norcalli/nvim-colorizer.lua) page and read the manual to customize it manually.
+2. TL;DR, Add, `Plug 'norcalli/nvim-colorizer.lua'` in your init.vim file (under plug#begin() and plug#end()).
+3. Add a line, `set termguicolors`, just below the plug#end() function.
+4. Add another line, just below the above line, which is `lua require'colorizer'.setup()` to make the colorizer work.
+
 #### Finally:
-0. After manually adding the plugins, do the following steps.
-1. Type `:so %` to source the init.vim file or else, restart nvim after saving it.
+1. After manually adding the plugins, restart nvim and do the following.
 2. Open a neovim instance and type `:PlugInstall` to Install.
 3. Do not forget to update the plugins too, using `:PlugUpdate` command (consider doing it weekly).
 4. Ever want to remove a Plugin? Remove the plugin name from the Plugin call function and save the file and restart vim. Open another instance and run the `:PlugClean` command.

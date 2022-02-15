@@ -30,8 +30,15 @@ call plug#begin()
   " Vim airline for statusbar
   Plug 'vim-airline/vim-airline'
 
+  " Colorize Hex Codes
+  Plug 'norcalli/nvim-colorizer.lua'
+
 " Initialize plugin system
 call plug#end()
+
+" initiate colorizer
+set termguicolors
+lua require'colorizer'.setup()
 
 " coc will install the missing extensions after coc.nvim service started.
 let g:coc_global_extensions = ['coc-json',
