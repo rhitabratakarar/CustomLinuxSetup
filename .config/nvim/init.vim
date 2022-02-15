@@ -27,6 +27,9 @@ call plug#begin()
   " Setup theme
   Plug 'morhetz/gruvbox'
 
+  " Vim airline for statusbar
+  Plug 'vim-airline/vim-airline'
+
 " Initialize plugin system
 call plug#end()
 
@@ -49,6 +52,12 @@ set noswapfile
 " determines the number of context lines you would like to see above and below the cursor.
 set scrolloff=5
 
+" Configure Nerd Tree
+let g:NERDTreeDirArrowExpandable="+"
+let g:NERDTreeDirArrowCollapsible="-"
+let NERDTreeShowHidden=1
+nmap <F2> :NERDTreeToggle<CR>
+
 " show command at the right bottom of the screen
 set showcmd
 
@@ -69,7 +78,7 @@ set relativenumber
 set showmatch
 
 " display thick cursor line to find the cursor easily
-" set cursorline
+set cursorline
 
 " syntax on for files
 syntax on
@@ -144,23 +153,20 @@ tnoremap <Esc> <C-\><C-n>
 inoremap <C-l> <Del>
 
 " configuring statusline
-set statusline=
-set statusline+=%#PmenuSel#
-set statusline+=%{StatuslineGit()}
-set statusline+=%#LineNr#
-set statusline+=\ %f
-set statusline+=%m\
-set statusline+=%=
-set statusline+=%#CursorColumn#
-set statusline+=\ %y
-set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
-set statusline+=\[%{&fileformat}\]
-set statusline+=\ %p%%
-set statusline+=\ %l:%c
-set statusline+=\
-
-" toggle nerd tree
-nmap <F2> :NERDTreeToggle<CR>
+" set statusline=
+" set statusline+=%#PmenuSel#
+" set statusline+=%{StatuslineGit()}
+" set statusline+=%#LineNr#
+" set statusline+=\ %f
+" set statusline+=%m\
+" set statusline+=%=
+" set statusline+=%#CursorColumn#
+" set statusline+=\ %y
+" set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
+" set statusline+=\[%{&fileformat}\]
+" set statusline+=\ %p%%
+" set statusline+=\ %l:%c
+" set statusline+=\
 
 " setup theme
 let g:gruvbox_italic=1

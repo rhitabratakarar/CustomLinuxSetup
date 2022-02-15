@@ -8,10 +8,32 @@ Install Vim-Plug:
 
 # Use these Instructions to customize manually or can copy the prebuilt configurations present in this repo.
 
+### Plugin Installation:
+
 Install Conqueror of Completion (COC):
-1. Refer to the Coc github manual page from [this link](https://github.com/neoclide/coc.nvim).
+1. Refer to the Coc github page from [this link](https://github.com/neoclide/coc.nvim).
 2. To setup a python environment, you must install the extension, 'coc-pyright' (Note: Extensions and Plugins are not same).
 
+Install Vim Airline:
+1. Goto [this](https://github.com/vim-airline/vim-airline) page to customize it. 
+2. TL;DR, Add `Plug 'vim-airline/vim-airline'` in your init.vim file (under plug#begin() and plug#end()).
+
+Install Gruvbox theme:
+1. Goto [this](https://github.com/morhetz/gruvbox) to read the documentation.
+2. TL;DR, Add `Plug 'morhetz/gruvbox'` in your init.vim file (under plug#begin() and plug#end()).
+
+Install NERDTree:
+1. Goto [this](https://github.com/preservim/nerdtree) page to read the manual and manually customize it.
+2. TL;DR, Add `Plug 'preservim/nerdtree'` in your init.vim file (under plug#begin() and plug#end()).
+
+#### Finally:
+0. After manually adding the plugins, do the following steps.
+1. Type `:so %` to source the init.vim file or else, restart nvim after saving it.
+2. Open a neovim instance and type `:PlugInstall` to Install.
+3. Do not forget to update the plugins too, using `:PlugUpdate` command (consider doing it weekly).
+4. Ever want to remove a Plugin? Remove the plugin name from the Plugin call function and save the file and restart vim. Open another instance and run the `:PlugClean` command.
+
+### Customizing Shell and Terminal:
 Change Terminal Font:
 1. Download `Cascadia Code` or `Source Code Pro` or `Hack` font.
 2. Unzip the zip file and move the extracted contents into ~/.fonts directory.
