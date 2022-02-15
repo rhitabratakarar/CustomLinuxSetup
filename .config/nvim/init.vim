@@ -43,6 +43,9 @@ let g:coc_global_extensions = ['coc-json',
 " not compatible with older vi
 set nocompatible
 
+" enable mouse access
+set mouse=a
+
 " hide the files instead of killing it
 set hidden
 
