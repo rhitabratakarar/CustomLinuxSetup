@@ -29,6 +29,7 @@ call plug#begin()
 
   " Vim airline for statusbar
   Plug 'vim-airline/vim-airline'
+  Plug 'vim-airline/vim-airline-themes'
 
   " Colorize Hex Codes
   Plug 'norcalli/nvim-colorizer.lua'
@@ -45,6 +46,9 @@ let g:coc_global_extensions = ['coc-json',
       \ 'coc-git',
       \ 'coc-pairs',
       \ 'coc-pyright',
+      \ 'coc-html',
+      \ 'coc-tsserver',
+      \ 'coc-css',
       \]
 
 " not compatible with older vi
@@ -67,6 +71,10 @@ let g:NERDTreeDirArrowExpandable="+"
 let g:NERDTreeDirArrowCollapsible="-"
 let NERDTreeShowHidden=1
 nmap <F2> :NERDTreeToggle<CR>
+
+" Enable Tab Structure Airline
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme='base16_gruvbox_dark_hard'
 
 " show command at the right bottom of the screen
 set showcmd
