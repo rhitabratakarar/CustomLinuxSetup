@@ -155,3 +155,14 @@
 3. Open `~/.config/compton.conf` and add `opacity-rule=["85:class_g = 'xfce4-terminal'"]`. This rule is for adding opacity for xfce4-terminal.
 
 4. Open Terminal and select transparency value from the preferences.
+
+
+** Install and setup Rofi **
+
+1. For Ubuntu based Distributions, use `sudo apt install rofi` to install rofi.
+
+2. For others, check [this repo](https://github.com/davatorium/rofi) documentation.
+
+3. Find the line `dmenu_run` and comment it. Add another line, `bindsym $mod+d exec rofi -show run` and save the file.
+
+4. Hit `modifierkey + shift + c` to reload the config file.
