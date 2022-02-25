@@ -166,3 +166,22 @@
 3. Find the line `dmenu_run` and comment it. Add another line, `bindsym $mod+d exec rofi -show run` and save the file.
 
 4. Hit `modifierkey + shift + c` to reload the config file.
+
+
+** Setup Rofi theme **
+
+1. Since my theme of choice was `gruvbox`, I went for the `gruvbox-dark-soft` theme.
+
+2. First make `rofi` directory under `.config` directory, path will look like `~/.config/rofi`.
+
+3. Make two files under `~/.config/rofi` named `config` and `<theme_of_your_choice>.rasi`.
+
+*Note: <theme_of_your_choice> will be the name of the theme that you have to make and append that name with `.rasi`.*
+
+4. Checkout [this Github Repository](https://github.com/bardisty/gruvbox-rofi/) and choose the theme you want(files ending with .rasi filetype).
+
+5. Copy the file contents, and paste it into the created file `<theme_of_your_choice>.rasi`.
+
+6. Now, open the `config` file that you had created in step 3.
+
+7. Append the file with, `rofi.theme: ~/.config/rofi/<theme_of_your_choice>.rasi`.
