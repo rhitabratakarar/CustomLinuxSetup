@@ -1,4 +1,14 @@
-# First Install vim-plug plugin manager.
+# First Install Neovim:
+
+1. Checkout [this](https://github.com/neovim/neovim/) github repo.
+
+2. Jump into the `releases` section and download the appropriate package for your operating system.
+
+
+# Install vim-plug plugin manager.
+
+
+Note: If you do not want to install plugins, remove this step.
 
 **Install Vim-Plug**:
 
@@ -22,6 +32,7 @@
 
 2. To setup a python environment, you must install the extension, 'coc-pyright' (Note: Coc extensions and vim-plug plugins are not same).
 
+
 **Install Vim Airline**:
 
 1. Goto [this](https://github.com/vim-airline/vim-airline) page to customize it. 
@@ -38,11 +49,22 @@
 3. Add `syntax on` in your init.vim file followed by another line, `colorscheme gruvbox`.
 
 
+**Install Monokai Theme**:
+
+1. Goto [this](https://github.com/tanvirtin/monokai.nvim) github repo to read the documentation.
+
+2. TL;DR, Add `Plug 'tanvirtin/monokai.nvim'` in your init.vim file (under plug#begin() and plug#end()).
+
+3. Add `syntax on` in your init.vim file if not present followed by another line, `colorscheme monokai_pro`
+
+
 **Install NERDTree**:
 
 1. Goto [this](https://github.com/preservim/nerdtree) page to read the manual and manually customize it.
 
 2. TL;DR, Add `Plug 'preservim/nerdtree'` in your init.vim file (under plug#begin() and plug#end()).
+
+3. Add a keybinding like `<F2>` to toggle the nerd tree. To do this, add `nmap <F2> :NERDTreeToggle<CR>` in your init.vim file.
 
 
 **Install Colorizer**:
@@ -56,7 +78,7 @@
 4. Add another line, just below the above line, which is `lua require'colorizer'.setup()` to make the colorizer work.
 
 
-#### Finally:
+#### Finally (Required if you have installed any of the plugins from the above section):
 
 1. After manually adding the plugins, restart nvim and do the following.
 
@@ -64,10 +86,11 @@
 
 3. Do not forget to update the plugins too, using `:PlugUpdate` command (consider doing it weekly).
 
-4. Ever want to remove a Plugin? Remove the plugin name from the Plugin call function and save the file and restart vim. Open another instance and run the `:PlugClean` command.
+4. To remove a Plugin: Remove the plugin name from the Plugin call function and save the file and restart vim. Open another instance and run the `:PlugClean` command.
 
 
 ### Customizing Shell and Terminal:
+
 
 **Change Terminal Font**:
 
@@ -157,7 +180,7 @@
 4. Open Terminal and select transparency value from the preferences.
 
 
-** Install and setup Rofi **
+**Install and setup Rofi**
 
 1. For Ubuntu based Distributions, use `sudo apt install rofi` to install rofi.
 
@@ -168,7 +191,7 @@
 4. Hit `modifierkey + shift + c` to reload the config file.
 
 
-** Setup Rofi theme **
+**Setup Rofi theme**
 
 1. Since my theme of choice was `gruvbox`, I went for the `gruvbox-dark-soft` theme.
 

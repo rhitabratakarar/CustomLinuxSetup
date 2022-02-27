@@ -26,6 +26,7 @@ call plug#begin()
 
   " Setup theme
   Plug 'morhetz/gruvbox'
+  Plug 'tanvirtin/monokai.nvim'
 
   " Vim airline for statusbar
   Plug 'vim-airline/vim-airline'
@@ -74,7 +75,7 @@ nmap <F2> :NERDTreeToggle<CR>
 
 " Enable Tab Structure Airline
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='base16_gruvbox_dark_hard'
+let g:airline_theme='molokai'
 
 " show command at the right bottom of the screen
 set showcmd
@@ -187,7 +188,6 @@ inoremap <C-l> <Del>
 " set statusline+=\
 
 " setup theme
-let g:gruvbox_italic=1
-colorscheme gruvbox
+colorscheme monokai_pro
 highlight Normal ctermbg=NONE
 
