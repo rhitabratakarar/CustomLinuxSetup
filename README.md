@@ -48,7 +48,7 @@ Note: If you do not want to install plugins, remove this step.
 
 3. Add the following lines in your init.vim file at the end
 
-      `let g:airline#entensions#tabline#enabled = 1`
+      `let g:airline#extensions#tabline#enabled = 1`
 
       `let g:airline_theme='molokai'`
 
