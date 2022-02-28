@@ -50,6 +50,7 @@ let g:coc_global_extensions = ['coc-json',
       \ 'coc-html',
       \ 'coc-tsserver',
       \ 'coc-css',
+      \ 'coc-omnisharp',
       \]
 
 " not compatible with older vi

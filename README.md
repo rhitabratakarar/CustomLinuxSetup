@@ -40,6 +40,18 @@ Note: If you do not want to install plugins, remove this step.
 2. TL;DR, Add `Plug 'vim-airline/vim-airline'` in your init.vim file (under plug#begin() and plug#end()).
 
 
+**Install Vim Airline Themes (for additional themes)**:
+
+1. Checkout [this](https://github.com/vim-airline/vim-airline-themes) repo to customize manually.
+
+2. TL;DR, Add `Plug 'vim-airline/vim-airline-themes'` in your init.vim file (under plug#begin() and plug#end()).
+
+3. Add the following lines in your init.vim file at the end
+
+    let g:airline#entensions#tabline#enabled = 1
+    let g:airline_theme='molokai'
+
+
 **Install Gruvbox theme**:
 
 1. Goto [this](https://github.com/morhetz/gruvbox) to read the documentation.
