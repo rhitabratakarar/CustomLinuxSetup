@@ -199,7 +199,7 @@ Note: If you do not want to install plugins, remove this step.
 
 2. For others, check [this repo](https://github.com/davatorium/rofi) documentation.
 
-3. Find the line `dmenu_run` and comment it. Add another line, `bindsym $mod+d exec rofi -show run` and save the file.
+3. Find the line `dmenu_run` and comment it. Add another line, `bindsym $mod+d exec rofi -show drun` and save the file.
 
 4. Hit `modifierkey + shift + c` to reload the config file.
 
