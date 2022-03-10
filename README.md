@@ -221,3 +221,12 @@ Note: If you do not want to install plugins, remove this step.
 6. Now, open the `config` file that you had created in step 3.
 
 7. Append the file with, `rofi.theme: ~/.config/rofi/<theme_of_your_choice>.rasi`.
+
+**Free Up Memory (Use it at your own risk)**:
+
+1. A `clear.sh` script will be present in this repository.
+
+2. Check whether the script is executable or not, (use `ls -l clear.sh` command, and `chmod +x clear.sh` to add executable permission).
+
+3. To run the script, type `sudo ./clear.sh` and hit enter. Provide your password and the script will free up the memory.
+
