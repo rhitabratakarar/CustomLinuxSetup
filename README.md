@@ -199,9 +199,11 @@ Note: If you do not want to install plugins, remove this step.
 
 2. For others, check [this repo](https://github.com/davatorium/rofi) documentation.
 
-3. Find the line `dmenu_run` and comment it. Add another line, `bindsym $mod+d exec rofi -show drun` and save the file.
+3. Find the line `bindsym $mod+d exec dmenu_run` in the `.config/i3/config` file and comment it by putting `#` in front of the line. 
 
-4. Hit `modifierkey + shift + c` to reload the config file.
+4. Add a new line, `bindsym $mod+d exec rofi -show drun` and save the file.
+
+5. Hit `modifierkey + shift + c` to reload the config file.
 
 
 **Setup Rofi theme**
