@@ -226,13 +226,13 @@ client.urgent           $red $red $white $red $red
 #end of window title bars & borders section
 
 # set wallpaper during startup
-exec --no-startup-id feh --bg-fill /home/rintu/Pictures/Wallpapers/12.jpg
+exec --no-startup-id feh --bg-fill /home/rintu/Pictures/Wallpapers/0.jpg
 
 # start compton during startup 
 exec --no-startup-id compton
 
 # no window border
-# for_window [class=".*"] border pixel 2
+for_window [class=".*"] border pixel 0
 
 gaps inner 6
 gaps top 5
