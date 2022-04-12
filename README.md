@@ -12,6 +12,8 @@ Note: If you do not want to install plugins, remove this step.
 
 **Install Vim-Plug**:
 
+0. Install Nodejs. This is a dependancy of this plugin manager.
+
 1. Refer to [this page](https://github.com/junegunn/vim-plug).
 
 2. Copy the code from [this link](https://github.com/junegunn/vim-plug#example) and paste it inside init.vim.
