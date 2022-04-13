@@ -72,15 +72,6 @@ Refer to the Coc github page from [this link](https://github.com/neoclide/coc.nv
 3. Add `syntax on` in your init.vim file followed by another line, `colorscheme gruvbox`.
 
 
-**Install Monokai Theme**:
-
-1. Goto [this](https://github.com/tanvirtin/monokai.nvim) github repo to read the documentation.
-
-2. TL;DR, Add `Plug 'tanvirtin/monokai.nvim'` in your init.vim file (under plug#begin() and plug#end()).
-
-3. Add `syntax on` in your init.vim file if not present followed by another line, `colorscheme monokai_pro`
-
-
 **Install NERDTree**:
 
 1. Goto [this](https://github.com/preservim/nerdtree) page to read the manual and manually customize it.

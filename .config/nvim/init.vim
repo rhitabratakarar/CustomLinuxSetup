@@ -21,6 +21,9 @@ call plug#begin()
   " NERDTree Plugin
   Plug 'preservim/nerdtree'
 
+  "paper color theme"
+  Plug 'NLKNguyen/papercolor-theme'
+
   " Conqueror of Completion
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
@@ -73,7 +76,7 @@ nmap <F2> :NERDTreeToggle<CR>
 
 " Enable Tab Structure Airline
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='molokai'
+let g:airline_theme='google_dark'
 
 " show command at the right bottom of the screen
 set showcmd
@@ -95,7 +98,7 @@ set relativenumber
 set showmatch
 
 " display thick cursor line to find the cursor easily
-set cursorline
+" set cursorline
 
 " syntax on for files
 syntax on
@@ -186,6 +189,5 @@ inoremap <C-l> <Del>
 " set statusline+=\
 
 " setup theme
-colorscheme monokai_pro
+colorscheme PaperColor
 highlight Normal ctermbg=NONE
-
