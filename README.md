@@ -1,4 +1,4 @@
-# First Install Neovim:
+# Install Neovim:
 
 1. Checkout [this](https://github.com/neovim/neovim/) github repo.
 
@@ -14,25 +14,33 @@ Note: If you do not want to install plugins, remove this step.
 
 1. Install Nodejs. Try to get the latest version from the website itself.
 
-2. Refer to [this page](https://github.com/junegunn/vim-plug).
+2. Refer to [this page](https://github.com/junegunn/vim-plug) for vim-plug.
 
-3. Copy the code from [this link](https://github.com/junegunn/vim-plug#example) and paste it inside init.vim.
+3. Copy the code from [this link](https://github.com/junegunn/vim-plug#example) and paste it inside init.vim if not present.
 
 4. Remove unnecessary Plugins from the pasted code. (Note: Plugins are those which have the line starting with 'Plug' word).
 
 5. Save and restart the nvim instance. Type ':PlugInstall' to install the plugins.
 
-# Use these Instructions to customize manually or can copy the prebuilt configurations present in this repo.
 
-
-### Plugin Installation:
+# Plugins:
 
 
 **Install Conqueror of Completion (COC)**:
 
-1. Refer to the Coc github page from [this link](https://github.com/neoclide/coc.nvim).
+Refer to the Coc github page from [this link](https://github.com/neoclide/coc.nvim).
 
-2. To setup a python environment, you must install the extension, 'coc-pyright' (Note: Coc extensions and vim-plug plugins are not same).
+*Adding COC Extensions*
+
+1. To add extensions, find the line that says `let g:coc_global_extensions...` and add the name of the extension.
+
+2. For example: To add 'coc-pyright' for python development, find the line and edit it like
+
+        let g:coc_global_extensions = [...,  
+        \ 'coc-pyright',  
+        \]
+
+    Note: The `...` represents the presence of other extensions.
 
 
 **Install Vim Airline**:
@@ -101,10 +109,10 @@ Note: If you do not want to install plugins, remove this step.
 
 3. Do not forget to update the plugins too, using `:PlugUpdate` command (consider doing it weekly).
 
-4. To remove a Plugin: Remove the plugin name from the Plugin call function and save the file and restart vim. Open another instance and run the `:PlugClean` command.
+4. To remove a Plugin: Remove the plugin name from the Plugin call function and save the file and restart neovim. Open another instance and run the `:PlugClean` command.
 
 
-### Customizing Shell and Terminal:
+# Customizing Terminal and i3-gaps:
 
 
 **Change Terminal Font**:
