@@ -21,15 +21,14 @@ call plug#begin()
   " NERDTree Plugin
   Plug 'preservim/nerdtree'
 
-  "paper color theme"
-  Plug 'NLKNguyen/papercolor-theme'
-
   " Conqueror of Completion
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
   " Setup theme
   Plug 'morhetz/gruvbox'
   Plug 'tanvirtin/monokai.nvim'
+  Plug 'NLKNguyen/papercolor-theme'
+  Plug 'arcticicestudio/nord-vim'
 
   " Vim airline for statusbar
   Plug 'vim-airline/vim-airline'
@@ -76,7 +75,7 @@ nmap <F2> :NERDTreeToggle<CR>
 
 " Enable Tab Structure Airline
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='google_dark'
+" let g:airline_theme=nord
 
 " show command at the right bottom of the screen
 set showcmd
@@ -189,5 +188,10 @@ inoremap <C-l> <Del>
 " set statusline+=\
 
 " setup theme
-colorscheme PaperColor
+" colorscheme nord
 highlight Normal ctermbg=NONE
+
+" configure pmenu
+highlight Pmenu ctermbg=black guibg=#000000
+highlight PmenuSel ctermbg=red guibg=#eb4034
+highlight PmenuThumb ctermbg=red guibg=#eb4034
