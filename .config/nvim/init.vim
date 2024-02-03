@@ -192,6 +192,10 @@ inoremap <C-l> <Del>
 highlight Normal ctermbg=NONE
 
 " configure pmenu
-highlight Pmenu ctermbg=black guibg=#000000
-highlight PmenuSel ctermbg=red guibg=#eb4034
-highlight PmenuThumb ctermbg=red guibg=#eb4034
+" highlight Pmenu ctermbg=black guibg=#000000
+" highlight PmenuSel ctermbg=red guibg=#eb4034
+" highlight PmenuThumb ctermbg=red guibg=#eb4034
+
+hi Pmenu cterm=underline ctermfg=250 ctermbg=235 gui=underline guifg=#bcbcbc guibg=#262626
+hi PmenuSel cterm=underline ctermfg=250 ctermbg=131 gui=underline guifg=#bcbcbc guibg=#af5f5f
+
