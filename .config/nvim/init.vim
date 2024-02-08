@@ -40,6 +40,11 @@ call plug#begin()
   " Folder Icons
   Plug 'ryanoasis/vim-devicons'
 
+  " Code formatter
+  Plug 'neovim/nvim-lspconfig'
+  Plug 'jose-elias-alvarez/null-ls.nvim'
+  Plug 'MunifTanjim/prettier.nvim'
+
 " Initialize plugin system
 call plug#end()
 
